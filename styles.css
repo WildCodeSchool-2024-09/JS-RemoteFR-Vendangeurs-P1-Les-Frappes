@@ -3,10 +3,12 @@
 * {
     box-sizing: border-box;
     line-height: 1.5;
+
 }
 
 body {
-    margin: 0;
+    margin: 0;  
+    
 }
 
 :root {
@@ -18,6 +20,13 @@ body {
 }
 
 /* Ajout + Choix de font(s) */
+
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
 
 
 /* HEADER */
@@ -36,6 +45,12 @@ body {
 header h1 {
     margin: 1vh 0;
     font-size: 25px;
+    font-family: pacifico;
+    text-shadow: 1px 1px 4px var(--secondaryColor);
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo {
@@ -51,7 +66,7 @@ header h1 {
     border-radius: 50px;
     height: 1.75rem;
     width: 18rem;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    box-shadow: 2px 2px 3px black;
 }
 
 #search-city {
@@ -84,23 +99,118 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 0px 0.15px rgba(245,203,92,1);
-    -webkit-box-shadow: 0px 0px 0px 0.15px rgba(245,203,92,1);
-    -moz-box-shadow: 0px 0px 0px 0.15px rgba(245,203,92,1);
+        /*box-shadow: 0px 0px 0px 0,16px rgba(245,203,92,1);
+    -webkit-box-shadow: 0px 0px 0px 0,16px rgba(245,203,92,1);
+    -moz-box-shadow: 0px 0px 0px 0.15px rgba(245,203,92,1);*/
 }
+
+
+/* Partie filtre */
 
 .filtre {
     background-color: var(--bannerColor);
-    height: 3.5vh; 
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-content: space-between;
+    height: 4,5vh; 
+    
 }
 
-.filtre a { /* Choisir entre color Black/White/Yellow */
+#filtregout { /* Choisir entre color Black/White/Yellow */
     color: var(--secondaryColor);
     text-shadow: 2px 3px 5px rgba(0,0,0,0.58);
+    text-align: center;
+    height: 90%;
+    font-size: 15px;
+    text-justify: center;
+    
 }
+
+#filter {
+    width: 100vw;
+    height: 10%;
+    background-color: var(--primaryColor);
+    justify-content: center;
+    
+            
+}
+
+
+
+#textfilter {    
+    display: 100%; 
+    flex-direction: row ;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    opacity: 50;
+    
+    
+}
+
+.textfilt {
+    color: var(--bannerColor);
+    text-shadow: 1px 2px white;
+    font-size: 15px;
+        
+}
+
+.dropdown1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    width: 60vw;
+    padding: 0 15px;
+
+}
+
+.dropdown2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-left: 20vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    width: 60vw;
+    padding: 0 15px;
+    
+}
+
+.dropdown3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    margin-left: 20vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    width: 60vw;
+    padding: 0 15px;
+
+}
+
+.dropdown4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    margin-left: 20vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    width: 60vw;
+    padding: 0 15px;
+
+}
+
+
 
 /* MAIN - Map */
 
