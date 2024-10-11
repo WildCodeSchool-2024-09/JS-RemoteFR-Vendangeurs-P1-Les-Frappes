@@ -250,11 +250,12 @@ a {
 
 .button-next {
     height: 40rem;
-    width: 6rem;
+    width: 3rem;
+    margin: 0 -0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    z-index: 3;
 }
 
 .button-next:hover {
@@ -262,11 +263,23 @@ a {
     transition: ease 0.4s;
 }
 
-.button-next::backdrop {
-    background-color: #68686877;
-    transition: ease 0.5s;
+.button-next button {
+    font-size: 2.6rem;
+    padding: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(240, 240, 240);
 }
 
+.button-next button:hover {
+    color: var(--bannerColor);
+}
+
+.button-next button:active {
+    color: whitesmoke;
+
+}
 
 .restaurantImg {
     width: 100%;
