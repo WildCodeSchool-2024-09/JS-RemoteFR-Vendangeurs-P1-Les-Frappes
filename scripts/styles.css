@@ -21,18 +21,8 @@ body {
 
 @font-face {
     font-family: 'LilitaOne';
-    src: url(./public/fonts/LilitaOne-Regular.ttf);
+    src: url(../public/fonts/LilitaOne-Regular.ttf);
 }
-
-/* Ajout + Choix de font(s) */
-
-
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-
 
 /* HEADER */
 
@@ -50,7 +40,6 @@ body {
 header h1 {
     margin: 1vh 0;
     font-size: 25px;
-    font-family: pacifico;
     text-shadow: 1px 1px 4px var(--secondaryColor);
 }
 
