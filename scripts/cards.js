@@ -21,3 +21,15 @@ for (i = 0; i < restaurant.lenght; i++ ) {
 card.outerHTML = card; 
 
 
+const buttons = document.querySelectorAll(".btn"); 
+const slide = document.querySelectorAll(".card");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+        const calcNextSlide = e.target.id === "next" ? 1 : -1;
+        const slideActive = document.querySelector(".active");
+
+        console.log([slide]);
+    });
+});
+
