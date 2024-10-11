@@ -278,7 +278,14 @@ a {
 
 .button-next button:active {
     color: whitesmoke;
+}
 
+#prev {
+    padding: 0 5px 0 10px;
+}
+
+#next {
+    padding: 0 10px 0 5px;
 }
 
 .restaurantImg {
