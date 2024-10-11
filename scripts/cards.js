@@ -19,3 +19,5 @@ for (i = 0; i < restaurant.lenght; i++ ) {
 }
 
 card.outerHTML = card; 
+
+

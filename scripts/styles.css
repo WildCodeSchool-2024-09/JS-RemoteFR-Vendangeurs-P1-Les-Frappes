@@ -227,7 +227,7 @@ a {
     background-color: var(--secondaryColor);
     min-height: 40rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -237,48 +237,6 @@ a {
     min-width: 18rem;
     border-radius: 15px;
     margin: 0 0.5rem;
-    z-index: -1;
-}
-
-.passive {
-    display: none;
-}
-
-.active {
-    z-index: 1;
-}
-
-.button-next {
-    height: 40rem;
-    width: 3rem;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-next:hover {
-    background-color: #68686877;
-    transition: ease 0.4s;
-
-}
-
-.button-next button {
-    font-size: 2.6rem;
-    padding: none;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(0, 0, 255, 0);
-    color: rgb(240, 240, 240);
-    z-index: 3;
-}
-
-.button-next button:hover {
-    color: var(--bannerColor);
-}
-
-.button-next button:active {
-    color: whitesmoke;
 }
 
 .restaurantImg {
@@ -292,6 +250,10 @@ section h2 {
     text-align: center;
     font-size: 20px;
 }
+
+
+
+
 
 /* FOOTER */
 
