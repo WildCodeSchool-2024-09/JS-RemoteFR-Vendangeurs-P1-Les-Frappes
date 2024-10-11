@@ -224,9 +224,39 @@ a {
 .card {
     background-color: var(--cardColor);
     min-height: 37rem;
-    max-width: 18rem;
+    min-width: 18rem;
     border-radius: 15px;
+    margin: 0 1rem;
+    z-index: -1;
 }
+
+.passive {
+    display: none;
+}
+
+.active {
+    z-index: 1;
+}
+
+.button-next {
+    height: 40rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-next:hover {
+    background-color: #68686877;
+    transition: ease 0.4s;
+}
+
+.button-next::backdrop {
+    background-color: #68686877;
+    transition: ease 0.5s;
+}
+
 
 .restaurantImg {
     width: 100%;
