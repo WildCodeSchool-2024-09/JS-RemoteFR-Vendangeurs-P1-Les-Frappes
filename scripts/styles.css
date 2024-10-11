@@ -227,7 +227,7 @@ a {
     background-color: var(--secondaryColor);
     min-height: 40rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -236,7 +236,7 @@ a {
     min-height: 37rem;
     min-width: 18rem;
     border-radius: 15px;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     z-index: -1;
 }
 
@@ -251,16 +251,16 @@ a {
 .button-next {
     height: 40rem;
     width: 3rem;
-    margin: 0 -0.5rem;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
 }
 
 .button-next:hover {
     background-color: #68686877;
     transition: ease 0.4s;
+
 }
 
 .button-next button {
@@ -270,6 +270,7 @@ a {
     border: none;
     background-color: rgba(0, 0, 255, 0);
     color: rgb(240, 240, 240);
+    z-index: 3;
 }
 
 .button-next button:hover {
@@ -278,14 +279,6 @@ a {
 
 .button-next button:active {
     color: whitesmoke;
-}
-
-#prev {
-    padding: 0 5px 0 10px;
-}
-
-#next {
-    padding: 0 10px 0 5px;
 }
 
 .restaurantImg {
