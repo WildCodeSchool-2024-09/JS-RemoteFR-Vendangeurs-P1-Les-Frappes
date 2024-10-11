@@ -57,7 +57,24 @@
             <!-- Map -->
         </section>
         <section class="listCard">
-            <div class="card" id="card">
+            <div class="button-next">
+                <button id="prev"></button>
+            </div>
+            <div class="card passive">
+            </div>
+            <div class="card active">
+                <img class="restaurantImg" src="${restaurant[0].img}" alt="Restaurant">
+                <h2>${restaurant[0].name}</h2>
+                <h3>"Note"</h3>
+                <img src="${restaurant[0].note}" alt="note_etoiles"> 
+                <p>${restaurant[0].notice}</p>
+                <hr>
+                <p>${restaurant[0].desc}</p>
+            </div>
+            <div class="card passive">
+            </div>
+            <div class="button-next">
+                <button id="next"></button>
             </div>
         </section>
     </main>
