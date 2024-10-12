@@ -8,7 +8,7 @@
 
 body {
     margin: 0;  
-    
+    max-width: 100%;
 }
 
 :root {
@@ -40,7 +40,6 @@ body {
 header h1 {
     margin: 1vh 0;
     font-size: 25px;
-    text-shadow: 1px 1px 4px var(--secondaryColor);
 }
 
 a {
@@ -212,68 +211,36 @@ a {
 }
 
 /* MAIN - ListCard */
-.listCard {
+
+.carousel {
     background-color: var(--secondaryColor);
-    min-height: 40rem;
+    min-height: 46rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.listCard button{
-    position: absolute;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 2.6rem;
-    z-index: 2;
-    cursor: pointer;
-    color: whitesmoke;
-}
-
-.listCard li {
-    list-style: none;
-}
-
-.listCard ul {
-    padding: 0;
-}
-
-.btn {
-    transform: translateY(-50%);
-    top: 50%;
-}
-
-#prev {
-    left: 5px;
-}
-
-#next {
-    right: 5px;
-}
-
-/* MAIN - Card */
-
 .card {
     background-color: var(--cardColor);
-    min-height: 37rem;
-    min-width: 18rem;
-    border-radius: 15px;
-    margin: 0 0.5rem;
+    min-height: 42.5rem;
+    min-width: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
-.restaurantImg {
-    width: 100%;
-    min-height: 10rem;
-    border-radius: 15px 15px 0 0;
+.image-carousel {
+    max-height: 15rem;
 }
 
-section h2 { 
-    background-color: var(--nameResto);
+.name-restaurant {
     text-align: center;
-    font-size: 20px;
+    background-color: var(--nameResto);
+    min-width: 100%;
+    border-radius: 15px 0 15px 0;
 }
-
 
 /* FOOTER */
 
