@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" >
     <title>Le Petit Frappé</title>
+    <link rel="shortcut icon" href="../public/images/.ico" type="image/x-icon">
     <link rel="stylesheet" href="./scripts/styles.css">
     <link rel="stylesheet" href="./scripts/responsive.css">
-    <link rel="shortcut icon" href="../public/images/.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
     <header>
@@ -56,32 +57,32 @@
         <section class="map">
             <!-- Map -->
         </section>
-        <section class="listCard">
-            <div class="button-next">
-                <button id="prev"></button>
+        <section class="splide carousel" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+                  <div class="splide__list">
+                      <li class="splide__slide card">
+                        <img class="image-carousel" src="/public/images/Logo.png" alt="">
+                        <h2 class="name-restaurant">Nom du restaurant</h2>
+                      </li>
+                      <li class="splide__slide card">
+                        <img class="image-carousel" src="/public/images/Logo.png" alt="">
+                        <h2 class="name-restaurant">Nom du restaurant</h2>
+                      </li>
+                      <li class="splide__slide card">
+                        <img class="image-carousel" src="/public/images/Logo.png" alt="">
+                        <h2 class="name-restaurant">Nom du restaurant</h2>
+                      </li>
+                      </ul>
             </div>
-            <div class="card passive">
-            </div>
-            <div class="card active">
-                <img class="restaurantImg" src="${restaurant[0].img}" alt="Restaurant">
-                <h2>${restaurant[0].name}</h2>
-                <h3>"Note"</h3>
-                <img src="${restaurant[0].note}" alt="note_etoiles"> 
-                <p>${restaurant[0].notice}</p>
-                <hr>
-                <p>${restaurant[0].desc}</p>
-            </div>
-            <div class="card passive">
-            </div>
-            <div class="button-next">
-                <button id="next"></button>
-            </div>
-        </section>
+          </section>
     </main>
     <footer>
         <img src="#" alt="Twitter">
         <img src="#" alt="Instagram">
     </footer>
-    <script src="./scripts/script.js" src="./scripts/cards.js" src="./scripts/restautant.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/restautant.js"></script>
+    <script src="./scripts/cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html> 
