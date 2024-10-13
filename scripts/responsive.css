@@ -6,14 +6,21 @@
 
     .note-responsive {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 5rem;
     }
 
     .note-container {
         padding: 0;
         gap: 1rem;
+    }
+
+    .note-container p {
+        margin: 1rem 0;
+    }
+
+    .avis p {
+        margin: 1rem 0;
     }
 
 
