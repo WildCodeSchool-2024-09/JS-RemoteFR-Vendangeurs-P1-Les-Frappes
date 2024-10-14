@@ -10,12 +10,34 @@ card = `
     <p>${restaurant[0].notice}</p>
     <hr>
     <p>${restaurant[0].desc}</p>
-`
+`;
 
 // J'ai oublié comment c'est le reste
 
-for (i = 0; i < restaurant.lenght; i++ ) { 
+for (i = 0; i < restaurant.length; i++) {}
 
-}
+//Toute cette dernière partie ne fonctionne pas encore, elle sert à mettre la carte du restaurant dans le boutton //
 
-card.outerHTML = card; 
+document.addEventListener("DOMContentLoaded", function () {
+  let button = document.getElementById("VoirCarte");
+  let VoirCarte = document.getElementById("Carte");
+
+  // Afficher la carte
+  button.addEventListener("click", function () {
+    if (Carte.style.display === "none" || Carte.style.display === "") {
+      Carte.style.display = "block";
+    }
+
+    // Cacher la carte
+    else {
+      Carte.style.display = "none";
+    }
+  });
+});
+
+//CAROUSSEL
+
+<div id="carousel-container">
+
+
+card.outerHTML = card;
