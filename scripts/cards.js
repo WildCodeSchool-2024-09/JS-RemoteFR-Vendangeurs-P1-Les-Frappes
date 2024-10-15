@@ -1,3 +1,4 @@
+
 document.addEventListener( 'DOMContentLoaded', function() {
   let splide = new Splide( '.splide', {
 type   : 'loop',
@@ -26,3 +27,4 @@ new Splide( '.splide', {
 		next  : 'splide__arrow--next class-next',
   },
 } ).mount();
+
