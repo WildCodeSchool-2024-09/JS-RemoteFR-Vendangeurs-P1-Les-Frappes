@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+
+}
+
+@media screen and (min-width: 993px)  {
+
+    .note-responsive {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .note-container {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .note-container p {
+        margin: 1rem 0;
+    }
+
+    .avis p {
+        margin: 1rem 0;
+    }
+
+
+}
