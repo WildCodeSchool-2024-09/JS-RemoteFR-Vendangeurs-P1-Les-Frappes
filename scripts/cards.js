@@ -1,43 +1,30 @@
-import restaurant from "./restautant";
 
-let card = document.querySelector("#card");
+document.addEventListener( 'DOMContentLoaded', function() {
+  let splide = new Splide( '.splide', {
+type   : 'loop',
+perPage: 3,
+focus  : 'center',
+gap: '4rem',
+snap: true,
+breakpoints: {
+  768: {
+    perPage: 1
+  },
+  993: {
+    perPage: 3
+  },
+}
+} );
+  splide.mount();
+} );
 
-card = `
-    <img class="restaurantImg" src="${restaurant[0].img}" alt="Restaurant">
-    <h2>${restaurant[0].name}</h2>
-    <h3>"Note"</h3>
-    <img src="${restaurant[0].note}" alt="note_etoiles"> 
-    <p>${restaurant[0].notice}</p>
-    <hr>
-    <p>${restaurant[0].desc}</p>
-`;
+new Splide( '.splide', {
+  arrowPath: 'm15.5 0.932-4.3 4.38...',
+  classes: {
+		arrows: 'splide__arrows your-class-arrows',
+		arrow : 'splide__arrow your-class-arrow',
+		prev  : 'splide__arrow--prev class-prev',
+		next  : 'splide__arrow--next class-next',
+  },
+} ).mount();
 
-// J'ai oublié comment c'est le reste
-
-for (i = 0; i < restaurant.length; i++) {}
-
-//Toute cette dernière partie ne fonctionne pas encore, elle sert à mettre la carte du restaurant dans le boutton //
-
-document.addEventListener("DOMContentLoaded", function () {
-  let button = document.getElementById("VoirCarte");
-  let VoirCarte = document.getElementById("Carte");
-
-  // Afficher la carte
-  button.addEventListener("click", function () {
-    if (Carte.style.display === "none" || Carte.style.display === "") {
-      Carte.style.display = "block";
-    }
-
-    // Cacher la carte
-    else {
-      Carte.style.display = "none";
-    }
-  });
-});
-
-//CAROUSSEL
-
-<div id="carousel-container">
-
-
-card.outerHTML = card;
