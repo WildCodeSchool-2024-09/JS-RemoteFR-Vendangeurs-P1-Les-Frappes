@@ -159,57 +159,6 @@ a {
         
 }
 
-.dropdown1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 20vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    width: 60vw;
-    padding: 0 15px;
-
-}
-
-.dropdown2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-    margin-left: 20vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    width: 60vw;
-    padding: 0 15px;
-    
-}
-
-.dropdown3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5%;
-    margin-left: 20vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    width: 60vw;
-    padding: 0 15px;
-
-}
-
-.dropdown4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5%;
-    margin-left: 20vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    width: 60vw;
-    padding: 0 15px;
-
-}
-
 
 
 /* MAIN - Map */
@@ -223,7 +172,7 @@ img.southParkMap{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1;
