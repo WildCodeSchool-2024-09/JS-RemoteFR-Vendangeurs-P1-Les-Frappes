@@ -223,7 +223,7 @@ a {
 .card {
     background-color: var(--cardColor);
     min-height: 42.5rem;
-    min-width: 50%;
+    min-width: 45%;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
