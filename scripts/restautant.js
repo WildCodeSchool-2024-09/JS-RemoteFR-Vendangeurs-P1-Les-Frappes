@@ -28,3 +28,7 @@ const restautant = [
 
 
 export default restaurant;
+
+const name = "jean";
+
+console.log() `${name} est partie loin`
