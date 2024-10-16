@@ -17,3 +17,6 @@ breakpoints: {
 } 
 } );
   splide.mount(); })
+
+  
+
