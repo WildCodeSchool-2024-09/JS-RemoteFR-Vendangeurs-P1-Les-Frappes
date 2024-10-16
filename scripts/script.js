@@ -47,3 +47,35 @@ document.addEventListener("DOMContentLoaded", function() {
     dropdown("dropdown3", "price");
     dropdown("dropdown4", "dist");
 });
+
+
+// Ajouter un écouteur de survol pour changer le curseur
+
+
+const map = document.querySelector(".southParkMap")
+
+map.addEventListener("mouseover", function() {
+    if (map.style.transform === "perspective(800px) translateZ(100px)") {
+        map.style.cursor = "zoom-out";
+    } else {
+        map.style.cursor = "zoom-in";
+    }
+});
+
+const mapCursor = map.style.cursor ;
+// Ajouter un écouteur de clic pour gérer le zoom
+map.addEventListener("click", function() {
+    if (map.style.transform === "perspective(800px) translateZ(100px)") {
+        // Zoom avant
+        map.style.transform = "perspective(200px) translateZ(100px)";
+        map.style.transition = "transform 0.5s";
+        map.style.cursor = "zoom-out";
+    } else {
+        // Zoom arrière
+        map.style.transform = "perspective(800px) translateZ(100px)";
+        map.style.transition = "transform 0.5s";
+        map.style.cursor = "zoom-in";
+    }
+    // Basculer l'état du zoom
+mapCursor !== mapCursor
+});
