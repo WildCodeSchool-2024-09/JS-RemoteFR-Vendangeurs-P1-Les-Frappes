@@ -166,16 +166,17 @@ a {
 .map {
     background-color: var(--primaryColor);
     height: 33vh;
+    position: absolute; 
+    z-index: 1;
 }
 
 img.southParkMap{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 
 .point {
@@ -187,6 +188,7 @@ img.southParkMap{
     cursor: pointer;
     transition: transform 0.2s;
     z-index: 2;
+
 }
 
 .point:hover {
