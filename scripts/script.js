@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     function setupTextFilters() {
         let textFilters = document.getElementsByClassName("textfilt");
         for (let i = 0; i < textFilters.length; i++) {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     dropdown("dropdown2", "specs");
     dropdown("dropdown3", "price");
     dropdown("dropdown4", "dist");
-});
+});*/
 
 
 // Ajouter un écouteur de survol pour changer le curseur
