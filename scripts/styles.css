@@ -210,10 +210,10 @@ a {
 }
 
 .southParkMap {
-    height : 220px;
+    height : 100%;
     width : 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     cursor: zoom-in;
