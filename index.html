@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="../public/images/.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./scripts/styles.css" />
     <link rel="stylesheet" href="./scripts/responsive.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
   </head>
   <body>
     <header>
@@ -16,7 +15,7 @@
         <img class="logo" src="./public/images/Logo.png" alt="logo" />
         <h1>Le petit Frappé</h1>
         <div class="searchBar">
-          <input type="search" class="search-city" name="search" placeholder="Retrouvez votre ville..."/>
+          <input type="search" class="search-restaurant" id="search-restaurant" name="search" placeholder="Retrouvez votre restaurant..."/>
           <a class="searchButton" href="#"
             ><img class="icon_search" src="./public/images/recherche_Icon.png" alt="Icone de recherche"/>
           </a>
@@ -25,9 +24,9 @@
       <div class="filtre">
         <a href="#">Filtrez vos goûts !</a>
         <nav>
-          <label for=""><input type="checkbox" id="france">Français</label>
-          <label for=""><input type="checkbox">Asiatique</label>
-          <label for=""><input type="checkbox">Epicé</label>
+          <label for=""><input type="checkbox" id="check-france">Français</label>
+          <label for=""><input type="checkbox" id="check-asie">Asiatique</label>
+          <label for=""><input type="checkbox" id="check-vegan">Vegan</label>
         </nav>
       </div>
     </header>
@@ -35,13 +34,12 @@
       <section class="map">
         <!-- Map -->
       </section>
-      <section class="splide carousel" aria-labelledby="carousel-heading">
-        <div class="splide__track">
-          <div class="splide__list" id="cards-container">
+      <section class="carousel" id="slide">
+          <div id="cards-container">
               <!-- Cards insert here -->
-            </div>
           </div>
-        </div>
+          <button class="prev">Précédent</button>
+          <button class="next">Suivant</button>
       </section>
     </main>
     <footer>
@@ -49,7 +47,6 @@
       <img src="#" alt="Instagram" />
     </footer>
     <script type="module" src="./scripts/script.js"></script>
-    <script src="./scripts/cards.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="./scripts/cards.js"></script>
   </body>
 </html>

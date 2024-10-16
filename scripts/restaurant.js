@@ -94,5 +94,3 @@ const restaurant = [
 
 
 export default restaurant;
-
-console.log(restaurant);

@@ -14,10 +14,10 @@ body {
 
 :root {
   --primaryColor: #cfdbd5;
-  --secondaryColor: #f5cb5c;
+  --secondaryColor: #52a183;
   --cardColor: #e8eddf;
-  --bannerColor: #686868;
-  --nameResto: #c9d4cf;
+  --bannerColor: #0b363b;
+  --nameResto: #addacc;
 }
 
 @font-face {
@@ -64,7 +64,7 @@ a {
   box-shadow: 2px 2px 3px black;
 }
 
-.search-city {
+.search-restaurant {
   background-color: white;
   border: none;
   width: 16rem;
