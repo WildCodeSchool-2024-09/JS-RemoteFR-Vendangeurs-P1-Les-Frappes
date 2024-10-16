@@ -42,7 +42,8 @@ body {
 header h1 {
 
     margin: 1vh 0;
-    font-size: 25px;
+    font-size: 28px;
+    z-index: 2;
 }
 
 a {
@@ -50,8 +51,9 @@ a {
 }
 
 .logo {
-  width: 50px;
-  margin: -1rem 0 -0.75rem 0;
+  width: 75px;
+  margin: -1rem 0 -4rem 0;
+  z-index: 1;
 }
 
 .searchBar {
@@ -208,10 +210,10 @@ a {
 }
 
 .southParkMap {
-    height : 220px;
+    height : 100%;
     width : 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     cursor: zoom-in;
@@ -271,7 +273,7 @@ a {
 .card {
     background-color: var(--cardColor);
     min-height: 42.5rem;
-    min-width: 45%;
+    min-width: 5rem;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
