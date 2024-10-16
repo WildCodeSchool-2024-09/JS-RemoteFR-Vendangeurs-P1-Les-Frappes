@@ -1,103 +1,71 @@
-/* fonction pour faire apparaitre le menu filtre après un clique sur "filtrez vos goûts" */
+// import createCard from "./createCard";
+// import restaurant from "./restautant";
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    
-    let textFilters = document.getElementsByClassName("textfilt");
-        
-    for (let i = 0; i < textFilters.length; i++) {
-        textFilters[i].style.opacity = 0; // Définir l'opacité initiale à 0
-    }
+// const cardsContainer = document.querySelector('#cards');
+// const frenchRestaurant = document.querySelector('#france');
 
-    let button = document.getElementById("filtregout");
-        
-    button.addEventListener("click", function () {
-        for (let i = 0; i < textFilters.length; i++) {
-            if (textFilters[i].style.opacity == 0 || textFilters[i].style.opacity == "0") {
-                textFilters[i].style.opacity = 1; // Supprime l'opacité au clic
-                } else {
-                textFilters[i].style.opacity = 0;
-                toggleAllDropdown(0)
-                // Remet l'opacité au clic suivant
-            }
-        }
-    });
-});
+// function displayCards() {
 
+//     const frenchChecked = frenchRestaurant.checked;
 
-document.addEventListener("DOMContentLoaded", function() {
-    function dropdown(a, b) {
-        let dropdownText = document.getElementsByClassName(a);
-        
-        for (let i = 0; i < dropdownText.length; i++) {
-            dropdownText[i].style.opacity = 0; // Définir l'opacité initiale à 0
-        }
+// const filterRestaurant = restaurant.filter(({name, type}) => {
+// const matchChecked = !frenchChecked || type === 'france';
 
-        let button = document.getElementById(b);
- 
-        button.addEventListener("click", function () {
-            for (let i = 0; i < dropdownText.length; i++) {
-                if (dropdownText[i].style.opacity == 0 || dropdownText[i].style.opacity == "0") {
-                    dropdownText[i].style.opacity = 1; // Supprime l'opacité au clic
-                } else {
-                    dropdownText[i].style.opacity = 0; // Remet l'opacité au clic suivant
-                }
-            }
-        });
-    }
+// return matchChecked;
+// })
 
-   
-    dropdown("dropdown1", "type");
-    dropdown("dropdown2", "specs");
-    dropdown("dropdown3", "price");
-    dropdown("dropdown4", "dist");
-});
-*/
-document.addEventListener("DOMContentLoaded", function() {
-    function setupTextFilters() {
-        let textFilters = document.getElementsByClassName("textfilt");
-        for (let i = 0; i < textFilters.length; i++) {
-            textFilters[i].style.opacity = 0; // Définir l'opacité initiale à 0
-        }
+// cardsContainer.innerHTML = "";
 
-        let button = document.getElementById("filtregout");
-        button.addEventListener("click", function() {
-            for (let i = 0; i < textFilters.length; i++) {
-                textFilters[i].style.opacity = (textFilters[i].style.opacity == 0 || textFilters[i].style.opacity == "0") ? 1 : 0;
-            }
-            toggleAllDropdowns(0); // Rendre tous les dropdowns opaques
-        });
-    }
+// filterRestaurant.forEach((restaurant) => {
+//     cardsContainer.appendChild(createCard(restaurant));
+// })
 
-    function dropdown(className, buttonId) {
-        let dropdownText = document.getElementsByClassName(className);
-        for (let i = 0; i < dropdownText.length; i++) {
-            dropdownText[i].style.opacity = 0; // Définir l'opacité initiale à 0
-        }
+// }
 
-        let button = document.getElementById(buttonId);
-        button.addEventListener("click", function() {
-            for (let i = 0; i < dropdownText.length; i++) {
-                dropdownText[i].style.opacity = (dropdownText[i].style.opacity == 0 || dropdownText[i].style.opacity == "0") ? 1 : 0;
-            }
-        });
-    }
+// frenchChecked.addEventListener("change", displayCards);
 
-    function toggleAllDropdowns(opacity) {
-        let allDropdowns = ["dropdown1", "dropdown2", "dropdown3", "dropdown4"];
-        allDropdowns.forEach(function(className) {
-            let elements = document.getElementsByClassName(className);
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].style.opacity = opacity;
-            }
-        });
-    }
+// displayCards();
 
-    // Initialiser les filtres de texte
-    setupTextFilters();
+import restaurant from "./restaurant.js";
 
-    // Initialiser les dropdowns
-    dropdown("dropdown1", "type");
-    dropdown("dropdown2", "specs");
-    dropdown("dropdown3", "price");
-    dropdown("dropdown4", "dist");
-});
+const container = document.querySelector("#cards-container");
+
+const cardsArray = [];
+
+for (let i = 0 ; i < restaurant.length ; i++){
+    cardsArray.push(`
+        <div class="splide__slide card">
+               <div>
+                 <img class="image-container" src="${restaurant[i].image}" alt="${restaurant[i].alt}" />
+               </div>
+               <div class="desc-container">
+                 <h2 class="name-restaurant">${restaurant[i].name}</h2>
+                 <div class="note-responsive">
+                   <div class="note-container">
+                     <p>Note du petit Frappé</p>
+                     <img class="note-image" src="${restaurant[i].noteFrappe}" alt=""/>
+                   </div>
+                   <div class="note-container">
+                     <p>Note Google</p>
+                     <p>${restaurant[i].noteGoogle}</p>
+                   </div>
+                   <div class="avis">
+                     <p>${restaurant[i].avis}</p>
+                   </div>
+                 </div>
+                 <hr />
+                 <div class="text-desc">
+                   <h3>Description</h3>
+                   <p>
+                     ${restaurant[i].desc}
+                   </p>
+                 </div>
+               </div>
+               <div class="link-card">
+                 <a href="">Leur site</a>
+             </div>
+           </div>`
+    );
+};
+
+container.innerHTML = cardsArray;
