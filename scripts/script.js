@@ -47,3 +47,4 @@ document.addEventListener("DOMContentLoaded", function() {
     dropdown("dropdown3", "price");
     dropdown("dropdown4", "dist");
 });
+
