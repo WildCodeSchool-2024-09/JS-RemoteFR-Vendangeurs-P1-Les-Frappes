@@ -110,22 +110,49 @@ a {
 /* MAIN - ListCard */
 
 .carousel {
-    background-color: var(--secondaryColor);
-    min-height: 46rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  flex-direction: row;
+  overflow: hidden;
+  height: 47rem;
+  background-color: var(--secondaryColor);
+}
+
+#card-container {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease;  
+}
+
+.prev, .next {
+  position: absolute;
+  transform: translateY(-50);
+  top: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .card {
     background-color: var(--cardColor);
-    min-height: 42.5rem;
-    min-width: 45%;
+    height: 42.5rem;
+    width: 16;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin-top: 1.75rem;
+    box-sizing: border-box;
+    flex: 0 0 32%;
 }
 
 .image-container {
@@ -143,7 +170,6 @@ a {
     background-color: var(--nameResto);
     min-width: 100%;
     border-radius: 15px 0 15px 0;
-
 }
 
 .desc-container h2 {
