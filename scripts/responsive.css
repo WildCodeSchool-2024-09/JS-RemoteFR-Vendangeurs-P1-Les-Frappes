@@ -1,5 +1,35 @@
 @media screen and (min-width: 768px) and (max-width: 995px) { 
 
+/* Position de départ de chaque pointeur format tablette */
+
+#point1 {
+    top: 42%;
+    left: 40%;
+
+}
+#point2 {
+    top: 55%;
+    left: 62%;
+
+}
+#point3 {
+    top: 42%;
+    left: 61%;
+
+}
+#point4 {
+    top: 42%;
+    left: 33%;
+
+}
+#point5 {
+    top: 55%;
+    left: 48%;
+
+}
+
+
+
 }
 
 @media screen and (min-width: 996px)  {
@@ -22,6 +52,35 @@
     .avis p {
         margin: 1rem 0;
     }
+
+/* Position initial de chaque pointeurs format desktop */
+
+#point1 {
+    top: 40%;
+    left: 44%;
+
+}
+#point2 {
+    top: 60%;
+    left: 59%;
+
+}
+#point3 {
+    top: 40%;
+    left: 58%;
+
+}
+#point4 {
+    top: 40%;
+    left: 39%;
+
+}
+#point5 {
+    top: 60%;
+    left: 49%;
+
+}
+
 
 
 }

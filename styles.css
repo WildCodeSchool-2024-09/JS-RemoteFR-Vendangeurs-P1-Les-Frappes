@@ -1,5 +1,5 @@
 /* Style de base */
-
+/*
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -21,7 +21,7 @@ body {
 
 /* Ajout + Choix de font(s) */
 
-
+/*
 .pacifico-regular {
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -30,7 +30,7 @@ body {
 
 
 /* HEADER */
-
+/*
 .header {
     background-color: var(--primaryColor);
     height: 20vh;
@@ -106,7 +106,7 @@ a {
 
 
 /* Partie filtre */
-
+/*
 .filtre {
     background-color: var(--bannerColor);
     display: flex;
@@ -116,9 +116,9 @@ a {
     height: 4,5vh; 
     
 }
-
+*/
 #filtregout { /* Choisir entre color Black/White/Yellow */
-    color: var(--secondaryColor);
+   /* color: var(--secondaryColor);
     text-shadow: 2px 3px 5px rgba(0,0,0,0.58);
     text-align: center;
     height: 90%;
@@ -126,7 +126,7 @@ a {
     text-justify: center;
     
 }
-
+/*
 #filter {
     width: 100vw;
     height: 10%;
@@ -162,7 +162,7 @@ a {
 
 
 /* MAIN - Map */
-
+/*
 .map {
     background-color: var(--primaryColor);
     height: 33vh;
@@ -215,7 +215,7 @@ img.southParkMap{
 }
 
 /* MAIN - Card */
-
+/*
 .listCard {
     background-color: var(--secondaryColor);
     min-height: 40rem;
@@ -244,7 +244,7 @@ section h2 {
 }
 
 /* FOOTER */
-
+/*
 footer {
     background-color: var(--bannerColor);
     min-height: 5rem;

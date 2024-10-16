@@ -194,6 +194,7 @@ a {
 }
 
 
+
 /* MAIN - Map */
 
 .map {
@@ -223,6 +224,26 @@ a {
 
 }
 
+#point1 {
+  top : 38%;
+  left : 28%;
+}
+#point2 {
+  top : 60%;
+  left : 78%;
+}
+#point3 {
+  top : 38%;
+  left : 75%;
+}
+#point4 {
+  top : 37%;
+  left : 15%;
+}
+#point5 {
+  top : 60%;
+  left : 45%;
+}
 
 .point {
     width: 20px;
@@ -237,7 +258,7 @@ a {
 }
 
 .point:hover {
-    transform: scale(1.5);
+    /*transform: scale(1.1);*/
     background-color: greenyellow;
 }
 
