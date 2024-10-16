@@ -204,6 +204,7 @@ a {
     align-items: center;
     position: absolute;
     overflow : hidden;
+    z-index: 0;
 
 
 }
@@ -236,8 +237,9 @@ a {
 }
 
 .point:hover {
-    transform: scale(1.5);
+    transform: scale(2);
     background-color: greenyellow;
+    
 
 }
 
