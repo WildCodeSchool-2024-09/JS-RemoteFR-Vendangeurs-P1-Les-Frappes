@@ -237,35 +237,8 @@ a {
 }
 
 .point:hover {
-
-    transform: scale(2);
-
+    transform: scale(1.5);
     background-color: greenyellow;
-    
-
-}
-
-.point::after {
-    content: attr(nameRestaurant);
-    display: none;
-    position: absolute;
-    top: -30px;
-    left: -10px;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-
-}
-
-.point:hover::after {
-    display: block;
-
-=======
-  transform: scale(1.5);
-  background-color: greenyellow;
 }
 
 .point::after {
@@ -278,13 +251,13 @@ a {
   color: white;
   padding: 5px;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
+
 }
 
 .point:hover::after {
   display: block;
-
 }
 
 /* MAIN - ListCard */
