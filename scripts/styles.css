@@ -197,7 +197,56 @@ a {
 
 .map {
   background-color: var(--primaryColor);
-  height: 33vh;
+  min-height: 33vh;
+  position: relative; 
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+img.southParkMap{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondaryColor); 
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 2;
+
+}
+
+.point:hover {
+  transform: scale(1.5);
+  background-color: greenyellow;
+}
+
+.point::after {
+  content: attr(nameRestaurant);
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.point:hover::after {
+  display: block;
 }
 
 /* MAIN - ListCard */
