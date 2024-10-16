@@ -14,11 +14,11 @@ body {
 
 :root {
   --primaryColor: #cfdbd5;
-  --secondaryColor: #f5cb5c;
+  --secondaryColor: #1c019b;
   --cardColor: #e8eddf;
   --bannerColor: #686868;
-  --nameResto: #c9d4cf;
-}
+  --nameResto: #9bb3d3;
+} /*changement de la couleur secondaryColor #f5cb5c (jaune) en bleu pour tester et name resto #c9d4cf en bleu clair */
 
 @font-face {
 
@@ -89,7 +89,7 @@ a {
 
 .searchButton {
   border-style: none;
-  background-color: var(--secondaryColor);
+  background-color: var(--nameResto); /*changement de la couleur ici aussi*/
   border-radius: 25px;
   padding: 0.15rem 0.75rem 0.15rem 0.75rem;
   display: flex;
@@ -103,7 +103,7 @@ a {
 /* Partie filtre */
 
 .filtre {
-  background-color: var(--bannerColor);
+  background-color: var(--nameResto); /*changement de la couleur ici aussi*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,7 @@ a {
 
 #filtregout {
   /* Choisir entre color Black/White/Yellow */
-  color: var(--secondaryColor);
+  color: var(--secondaryColor); /*changement de la couleur ici aussi*/
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.58);
   text-align: center;
   height: 90%;
@@ -197,7 +197,56 @@ a {
 
 .map {
   background-color: var(--primaryColor);
-  height: 33vh;
+  min-height: 33vh;
+  position: relative; 
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+img.southParkMap{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondaryColor); 
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 2;
+
+}
+
+.point:hover {
+  transform: scale(1.5);
+  background-color: greenyellow;
+}
+
+.point::after {
+  content: attr(nameRestaurant);
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.point:hover::after {
+  display: block;
 }
 
 /* MAIN - ListCard */
