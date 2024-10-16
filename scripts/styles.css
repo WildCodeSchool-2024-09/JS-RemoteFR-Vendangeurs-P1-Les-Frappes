@@ -197,46 +197,9 @@ a {
 /* MAIN - Map */
 
 .map {
-
-    background-color: var(--primaryColor);
-    height: 33vh;
-    width:100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    overflow : hidden;
-    z-index: 0;
-
-
-}
-
-.southParkMap {
-    height : 220px;
-    width : 100%;
-    object-fit: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 0; 
-    cursor: zoom-in;
-    transform : perspective(800px) translateZ(100px);
-
-
-}
-
-
-.point {
-    width: 20px;
-    height: 20px;
-    background-color: var(--secondaryColor); 
-    border-radius: 50%;
-    position: absolute;
-    cursor: pointer;
-    transition: transform 0.2s;
-    z-index: 1;
-=======
   background-color: var(--primaryColor);
-  min-height: 33vh;
+  min-height: 45vh;
+  width:100%;
   position: relative; 
   width: 100%;
   height: auto;
@@ -244,13 +207,15 @@ a {
   z-index: 1;
 }
 
-img.southParkMap{
+img.southParkMap {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+  cursor: zoom-in;
+  transform : perspective(800px) translateZ(100px);
 }
 
 .point {
@@ -262,39 +227,11 @@ img.southParkMap{
   cursor: pointer;
   transition: transform 0.2s;
   z-index: 2;
-
 }
 
 .point:hover {
-
-    transform: scale(2);
-
+    transform: scale(1.5);
     background-color: greenyellow;
-    
-
-}
-
-.point::after {
-    content: attr(nameRestaurant);
-    display: none;
-    position: absolute;
-    top: -30px;
-    left: -10px;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-
-}
-
-.point:hover::after {
-    display: block;
-
-=======
-  transform: scale(1.5);
-  background-color: greenyellow;
 }
 
 .point::after {
@@ -307,13 +244,13 @@ img.southParkMap{
   color: white;
   padding: 5px;
   border-radius: 5px;
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
+
 }
 
 .point:hover::after {
   display: block;
-
 }
 
 /* MAIN - ListCard */
