@@ -209,26 +209,30 @@ a {
   z-index: 1;
 }
 
-img.southParkMap {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: zoom-in;
-  transform : perspective(800px) translateZ(100px);
+.southParkMap {
+    height : 220px;
+    width : 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: zoom-in;
+    transform : perspective(800px) translateZ(100px);
+
+
 }
 
+
 .point {
-  width: 20px;
-  height: 20px;
-  background-color: var(--secondaryColor); 
-  border-radius: 50%;
-  position: absolute;
-  cursor: pointer;
-  transition: transform 0.2s;
-  z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondaryColor); 
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 2;
+
 }
 
 .point:hover {
@@ -257,9 +261,10 @@ img.southParkMap {
 
 /* MAIN - ListCard */
 
+
 .carousel {
     background-color: var(--secondaryColor);
-    min-height: 46rem;
+    min-height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;

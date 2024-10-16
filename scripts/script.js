@@ -91,6 +91,7 @@ map.addEventListener("click", function() {
         map.style.cursor = "zoom-out";
         point1.style.top = "28%";
         point1.style.left = "14%";
+        
         //point1.style.scale = "2";
         point2.style.top = "65%";
         point2.style.left = "97%";
@@ -129,3 +130,4 @@ map.addEventListener("click", function() {
     // Basculer l'état du zoom
 mapCursor !== mapCursor
 });
+
