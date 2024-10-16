@@ -130,7 +130,3 @@ map.addEventListener("click", function() {
     // Basculer l'état du zoom
 mapCursor !== mapCursor
 });
-<<<<<<< HEAD
-=======
-
->>>>>>> 8b66bfd7c5b3181d6159748eb0e32e87abca31be
