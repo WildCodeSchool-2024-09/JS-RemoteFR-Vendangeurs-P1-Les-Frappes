@@ -198,7 +198,7 @@ a {
 
 .map {
   background-color: var(--primaryColor);
-  min-height: 45vh;
+  min-height: 44vh;
   width:100%;
   position: relative; 
   width: 100%;
