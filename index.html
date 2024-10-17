@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="../public/images/.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./scripts/styles.css" />
     <link rel="stylesheet" href="./scripts/responsive.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
   </head>
   <body>
     <header>
@@ -18,15 +17,19 @@
         <h1>Le petit Frappé</h1>
         </div>
         <div class="searchBar">
-          <input type="search" id="search-city" name="search" placeholder="Retrouvez votre ville..."/>
+          <input type="search" class="search-restaurant" id="search-restaurant" name="search" placeholder="Retrouvez votre restaurant..."/>
           <a class="searchButton" href="#"
             ><img class="icon_search" src="./public/images/recherche_Icon.png" alt="Icone de recherche"/>
           </a>
         </div>
       </div>
       <div class="filtre">
-        <a id="filtregout" href="#">Filtrez vos goûts !</a>
-        <nav id="filter"></nav>
+        <a href="#">Filtrez vos goûts !</a>
+        <nav>
+          <label for=""><input type="checkbox" id="check-france">Français</label>
+          <label for=""><input type="checkbox" id="check-asie">Asiatique</label>
+          <label for=""><input type="checkbox" id="check-vegan">Vegan</label>
+        </nav>
       </div>
     </header>
     
@@ -40,74 +43,19 @@
           <div class="point" id="point4" style="top: 37%; left: 15%;" nameRestaurant="restaurant 4"></div>
           <div class="point" id="point5" style="top: 30%; left: 45%;" nameRestaurant="restaurant 5"></div>
       </section>
-        
-
-      <section class="splide carousel" aria-labelledby="carousel-heading">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide card">
-              <div>
-                <img class="image-container" src="/public/images/Logo.png" alt="" />
-              </div>
-              <div class="desc-container">
-                <h2 class="name-restaurant">Nom du restaurant</h2>
-                <div class="note-responsive">
-                  <div class="note-container">
-                    <p>Note du petit Frappé</p>
-                    <img class="note-image" src="./public/images/note-5-5.png" alt=""/>
-                  </div>
-                  <div class="note-container">
-                    <p>Note Google</p>
-                    <p>4.5/5</p>
-                  </div>
-                  <div class="avis">
-                    <p>Avis 365</p>
-                  </div>
-                </div>
-                <hr />
-                <div class="text-desc">
-                  <h3>Description</h3>
-                  <!-- Max 260 charactère en format tel -->
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta molestias maiores nesciunt, ipsum nihil quam maxime
-                    assumenda accusamus repellendus, similique mollitia adipisci
-                    dolore aperiam cumque. Ipsam id praesentium
-                  </p>
-                </div>
-              </div>
-              <div class="link-card">
-                <a href="">Leur site</a>
-              </div>
-            </li>
-            <li class="splide__slide card">
-              <img class="image-container" src="/public/images/Logo.png" alt=""/>
-              <h2 class="name-restaurant">Nom du restaurant</h2>
-            </li>
-            <li class="splide__slide card">
-              <img class="image-container" src="/public/images/Logo.png" alt=""/>
-              <h2 class="name-restaurant">Nom du restaurant</h2>
-            </li>
-            <li class="splide__slide card">
-              <img class="image-container" src="/public/images/Logo.png" alt=""/>
-              <h2 class="name-restaurant">Nom du restaurant</h2>
-            </li>
-            <li class="splide__slide card">
-              <img class="image-container" src="/public/images/Logo.png" alt=""/>
-              <h2 class="name-restaurant">Nom du restaurant</h2>
-            </li>
-          </ul>
-        </div>
+      <section class="carousel">
+          <div id="cards-container">
+              <!-- Cards insert here -->
+          </div>
+          <button class="prev">Précédent</button>
+          <button class="next">Suivant</button>
       </section>
     </main>
     <footer>
       <img src="#" alt="Twitter" />
       <img src="#" alt="Instagram" />
     </footer>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/restautant.js"></script>
-    <script src="scripts/createCard.js"></script>
-    <script src="./scripts/cards.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/cards.js"></script>
   </body>
 </html>
