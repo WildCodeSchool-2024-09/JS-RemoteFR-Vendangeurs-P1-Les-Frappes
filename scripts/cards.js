@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchResto = searchInput.value;
 
     const filterRestaurant = restaurant.filter(({name}) => {
-      const matchSearch = name.includes(searchResto);
+      const matchSearch = name.toLowerCase().includes(searchResto.toLowerCase());
 
       return matchSearch ;
     });
