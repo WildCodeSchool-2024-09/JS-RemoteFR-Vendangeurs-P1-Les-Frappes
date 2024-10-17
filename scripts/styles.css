@@ -46,6 +46,8 @@ header h1 {
 
 a {
   text-decoration: none;
+  text-align: center;
+  color: aquamarine;
 }
 
 .logo {
@@ -83,7 +85,7 @@ a {
   border-style: none;
   background-color: var(--secondaryColor);
   border-radius: 25px;
-  padding: 0.15rem 0.75rem 0.15rem 0.75rem;
+  padding: 0.16rem 0.75rem 0.16rem 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +100,13 @@ a {
   justify-content: center;
   align-content: space-between;
   height: 5vh;
+  padding: 1rem 0;
 }
+
+.filtre h2 {
+  margin: 0;
+}
+
 
 
 /* MAIN - Map */
@@ -125,6 +133,26 @@ a {
     transform : perspective(800px) translateZ(100px);
 }
 
+#point1 {
+  top : 38%;
+  left : 22%;
+}
+#point2 {
+  top : 60%;
+  left : 88%;
+}
+#point3 {
+  top : 38%;
+  left : 88%;
+}
+#point4 {
+  top : 38%;
+  left : 2%;
+}
+#point5 {
+  top : 60%;
+  left : 46%;
+}
 
 .point {
     width: 20px;
@@ -139,7 +167,7 @@ a {
 }
 
 .point:hover {
-    transform: scale(1.5);
+    /*transform: scale(1.1);*/
     background-color: greenyellow;
 }
 
@@ -312,6 +340,14 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.Twitter{
+  width: 35px;
+}
+
+.Instagram{
+  width: 39px;
 }
 
 footer img {
