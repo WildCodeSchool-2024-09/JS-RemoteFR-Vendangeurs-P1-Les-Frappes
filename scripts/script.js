@@ -1,62 +1,4 @@
-<<<<<<< HEAD
-/* fonction pour faire apparaitre le menu filtre après un clique sur "filtrez vos goûts" */
-
-/*document.addEventListener("DOMContentLoaded", function () {
-    
-    let textFilters = document.getElementsByClassName("textfilt");
-        
-    for (let i = 0; i < textFilters.length; i++) {
-        textFilters[i].style.opacity = 0; // Définir l'opacité initiale à 0
-    }
-
-    let button = document.getElementById("filtregout");
-        
-    button.addEventListener("click", function () {
-        for (let i = 0; i < textFilters.length; i++) {
-            if (textFilters[i].style.opacity == 0 || textFilters[i].style.opacity == "0") {
-                textFilters[i].style.opacity = 1; // Supprime l'opacité au clic
-                } else {
-                textFilters[i].style.opacity = 0;
-                toggleAllDropdown(0)
-                // Remet l'opacité au clic suivant
-            }
-        }
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    function dropdown(a, b) {
-        let dropdownText = document.getElementsByClassName(a);
-        
-        for (let i = 0; i < dropdownText.length; i++) {
-            dropdownText[i].style.opacity = 0; // Définir l'opacité initiale à 0
-        }
-
-        let button = document.getElementById(b);
- 
-        button.addEventListener("click", function () {
-            for (let i = 0; i < dropdownText.length; i++) {
-                if (dropdownText[i].style.opacity == 0 || dropdownText[i].style.opacity == "0") {
-                    dropdownText[i].style.opacity = 1; // Supprime l'opacité au clic
-                } else {
-                    dropdownText[i].style.opacity = 0; // Remet l'opacité au clic suivant
-                }
-            }
-        });
-    }
-
-   
-    dropdown("dropdown1", "type");
-    dropdown("dropdown2", "specs");
-    dropdown("dropdown3", "price");
-    dropdown("dropdown4", "dist");
-});
-*/
-document.addEventListener("DOMContentLoaded", function() {
-=======
 /*document.addEventListener("DOMContentLoaded", function() {
->>>>>>> 1b296391067fc98d1c1915604459c60733d67576
     function setupTextFilters() {
         let textFilters = document.getElementsByClassName("textfilt");
         for (let i = 0; i < textFilters.length; i++) {
@@ -104,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
     dropdown("dropdown2", "specs");
     dropdown("dropdown3", "price");
     dropdown("dropdown4", "dist");
-<<<<<<< HEAD
-});
-=======
 });*/
 
 
@@ -191,4 +130,3 @@ map.addEventListener("click", function() {
     // Basculer l'état du zoom
 mapCursor !== mapCursor
 });
->>>>>>> 1b296391067fc98d1c1915604459c60733d67576

@@ -14,19 +14,11 @@ body {
 
 :root {
   --primaryColor: #cfdbd5;
-<<<<<<< HEAD
-  --secondaryColor: #1c019b;
-  --cardColor: #e8eddf;
-  --bannerColor: #686868;
-  --nameResto: #9bb3d3;
-} /*changement de la couleur secondaryColor #f5cb5c (jaune) en bleu pour tester et name resto #c9d4cf en bleu clair */
-=======
   --secondaryColor: #52a183;
   --cardColor: #e8eddf;
   --bannerColor: #0b363b;
   --nameResto: #addacc;
 }
->>>>>>> 1b296391067fc98d1c1915604459c60733d67576
 
 @font-face {
 
