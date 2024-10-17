@@ -170,12 +170,10 @@ mapCursor !== mapCursor
 mapCursor.addEventListener('mouseover', function(event) {
     const x = event.clientX;
     const y = event.clientY;
-    console.log(`Position de la souris: X=${x}, Y=${y}`);
 });
 */
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-    console.log("petit ecran");
 map.addEventListener("click", function() {
     if (map.style.transform === "perspective(800px) translateZ(100px)") {
         // Zoom avant

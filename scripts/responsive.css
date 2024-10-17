@@ -70,9 +70,10 @@
     align-items: center;
 }
       
-.filtre {
-    font-size: 1.25rem;
+.banner {
+    font-size: 25px;
 }
+
     /* Cards */
   
 .note-responsive {
@@ -92,6 +93,14 @@
 
 .avis p {
     margin: 1rem 0;
+}
+
+.card{
+    min-width: 35rem;
+}
+
+.carousel{
+    min-height: 50rem;
 }
 
     /* Map */
@@ -138,13 +147,6 @@ header h1 {
     z-index: 1;
 }
 
-.card{
-    min-width: 35rem;
-}
-
-.carousel{
-    min-height: 50rem;
-}
 
 .Twitter{
     width: 40px;
@@ -153,6 +155,7 @@ header h1 {
 .Instagram{
     width: 45px;
 }
+
 
 footer img {
     margin: 0 5px 0 0;
