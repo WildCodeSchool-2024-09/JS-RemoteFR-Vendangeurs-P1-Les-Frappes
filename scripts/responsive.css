@@ -131,6 +131,17 @@
 
 }
 
+.point {
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine; 
+}
+
+.point::after {
+    top: -45px;
+    font-size: 20px;
+
+  }
 
 header h1 {
     margin: 2vh 0;

@@ -151,9 +151,9 @@ a {
 }
 
 .point {
-    width: 20px;
-    height: 20px;
-    background-color: var(--secondaryColor); 
+    width: 25px;
+    height: 25px;
+    background-color: aquamarine; 
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
@@ -162,8 +162,30 @@ a {
 
 }
 
-/* MAIN - ListCard */
 
+.point:hover {
+    /*transform: scale(1.1);*/
+    background-color: chartreuse;
+}
+
+.point::after {
+  content: attr(nameRestaurant);
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  white-space: nowrap;
+
+}
+
+.point:hover::after {
+  display: block;
+}
 
 .section-slide {
   display: flex;
