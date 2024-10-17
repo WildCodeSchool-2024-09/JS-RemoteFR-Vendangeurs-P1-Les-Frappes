@@ -188,24 +188,25 @@ a {
 /* MAIN - ListCard */
 
 
-.carousel {
+.section-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   position: relative;
-  margin: auto;
-  overflow: hidden;
   height: 47rem;
   background-color: var(--secondaryColor);
 }
 
-#card-container {
+.slider {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  transition: transform 0.5s ease; 
-  width: 100vw;
-  height: 100vw; 
+  overflow: hidden;
+}
+
+.cards-container {
+  display: block;
 }
 
 .prev, .next {
@@ -239,7 +240,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.75rem;
+    margin-left: 2rem;
     box-sizing: border-box;
     position: relative;
 }
