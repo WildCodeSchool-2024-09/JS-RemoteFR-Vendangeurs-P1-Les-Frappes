@@ -96,15 +96,12 @@ a {
 .filtre {
   background-color: var(--bannerColor);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: space-between;
+  align-items: center;
   height: 5vh;
   padding: 1rem 0;
-}
-
-.filtre h2 {
   margin: 0;
+  color: var(--nameResto);
 }
 
 
