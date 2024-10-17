@@ -234,13 +234,13 @@ a {
 .card {
     background-color: var(--cardColor);
     height: 43.5rem;
-    width: 23rem;
+    min-width: 22rem;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-left: 2rem;
+    margin: 0 1rem;
     box-sizing: border-box;
     position: relative;
 }
@@ -276,7 +276,7 @@ a {
 .note-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 3.5rem;
+    padding: 0 2rem;
 }
 
 .note-container p {
