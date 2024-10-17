@@ -43,7 +43,7 @@ let restaurant = [
         noteGoogle: "3/5",
         avis: "Avis 105",
         desc: " Ce restaurant créole vous fait voyager avec ses plats épicés et parfumés : rougail, bouchons frits et gâteau patate. Une ambiance chaleureuse et festive pour retrouver le goût des îles. Parfait pour un repas dépaysant avec des saveurs de l'Océan Indien."
-    },    
+    }
 ];
 
 export default restaurant;
