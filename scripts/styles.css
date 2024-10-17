@@ -14,10 +14,10 @@ body {
 
 :root {
   --primaryColor: #cfdbd5;
-  --secondaryColor: #f5cb5c;
+  --secondaryColor: #52a183;
   --cardColor: #e8eddf;
-  --bannerColor: #686868;
-  --nameResto: #c9d4cf;
+  --bannerColor: #0b363b;
+  --nameResto: #addacc;
 }
 
 @font-face {
@@ -40,9 +40,9 @@ body {
 }
 
 header h1 {
-
     margin: 1vh 0;
-    font-size: 25px;
+    font-size: 28px;
+    z-index: 2;
 }
 
 a {
@@ -50,8 +50,9 @@ a {
 }
 
 .logo {
-  width: 50px;
-  margin: -1rem 0 -0.75rem 0;
+  width: 75px;
+  margin: -1rem 0 -4rem 0;
+  z-index: 1;
 }
 
 .searchBar {
@@ -65,21 +66,13 @@ a {
   box-shadow: 2px 2px 3px black;
 }
 
-#search-city {
+.search-restaurant {
   background-color: white;
   border: none;
   width: 16rem;
   border-radius: 25px 0 0 25px;
   padding: 0.25rem 0.75rem;
   margin: 0;
-}
-
-#search-city:hover {
-  border-style: none;
-}
-
-#search-city:active {
-  border-style: none;
 }
 
 .icon_search {
@@ -95,9 +88,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*box-shadow: 0px 0px 0px 0,16px rgba(245,203,92,1);
-    -webkit-box-shadow: 0px 0px 0px 0,16px rgba(245,203,92,1);
-    -moz-box-shadow: 0px 0px 0px 0.15px rgba(245,203,92,1);*/
 }
 
 /* Partie filtre */
@@ -111,87 +101,6 @@ a {
   height: 4, 5vh;
 }
 
-#filtregout {
-  /* Choisir entre color Black/White/Yellow */
-  color: var(--secondaryColor);
-  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.58);
-  text-align: center;
-  height: 90%;
-  font-size: 15px;
-  text-justify: center;
-}
-
-#filter {
-  width: 100vw;
-  height: 10%;
-  background-color: var(--primaryColor);
-  justify-content: center;
-}
-
-#textfilter {
-  display: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  opacity: 50;
-}
-
-.textfilt {
-  color: var(--bannerColor);
-  text-shadow: 1px 2px white;
-  font-size: 15px;
-}
-
-.dropdown1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 20vw;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px black;
-  width: 60vw;
-  padding: 0 15px;
-}
-
-.dropdown2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5%;
-  margin-left: 20vw;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px black;
-  width: 60vw;
-  padding: 0 15px;
-}
-
-.dropdown3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5%;
-  margin-left: 20vw;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px black;
-  width: 60vw;
-  padding: 0 15px;
-}
-
-.dropdown4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5%;
-  margin-left: 20vw;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px black;
-  width: 60vw;
-  padding: 0 15px;
-}
 
 
 
@@ -209,10 +118,10 @@ a {
 }
 
 .southParkMap {
-    height : 220px;
+    height : 100%;
     width : 100%;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     cursor: zoom-in;
@@ -282,22 +191,50 @@ a {
 
 
 .carousel {
-    background-color: var(--secondaryColor);
-    min-height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  flex-direction: row;
+  overflow: hidden;
+  height: 47rem;
+  background-color: var(--secondaryColor);
+}
+
+#card-container {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease;  
+}
+
+.prev, .next {
+  position: absolute;
+  transform: translateY(-50);
+  top: 50%;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .card {
     background-color: var(--cardColor);
-    min-height: 42.5rem;
-    min-width: 45%;
+    height: 42.5rem;
+    width: 16;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin-top: 1.75rem;
+    box-sizing: border-box;
+    flex: 0 0 32%;
 }
 
 .image-container {
@@ -315,7 +252,6 @@ a {
     background-color: var(--nameResto);
     min-width: 100%;
     border-radius: 15px 0 15px 0;
-
 }
 
 .desc-container h2 {
