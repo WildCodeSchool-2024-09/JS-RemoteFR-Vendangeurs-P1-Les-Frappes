@@ -162,30 +162,6 @@ a {
 
 }
 
-.point:hover {
-    /*transform: scale(1.1);*/
-    background-color: greenyellow;
-}
-
-.point::after {
-  content: attr(nameRestaurant);
-  display: none;
-  position: absolute;
-  top: -30px;
-  left: -10px;
-  background-color: black;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-
-}
-
-.point:hover::after {
-  display: block;
-}
-
 /* MAIN - ListCard */
 
 
@@ -194,6 +170,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   height: 47rem;
   background-color: var(--secondaryColor);
 }
@@ -203,11 +180,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  overflow: hidden;
+  transition: transform ease 0.5s;
 }
 
-.cards-container {
-  display: block;
+#cards-container {
+  flex: 0 0 auto;
 }
 
 .prev, .next {
@@ -220,7 +197,7 @@ a {
   outline: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.363);
-  color: white;
+  color: rgb(238, 238, 238);
   border-radius: 7px 0;
 }
 
@@ -326,7 +303,7 @@ hr {
 }
 
 .link-card:hover {
-    background-color: #b6c0bc;
+    background-color: #1ce092;
     transform: ease-in-out 0.9s;
 }
 
