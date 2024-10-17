@@ -104,4 +104,14 @@
     .carousel{
         min-height: 50rem;
     }
+
+    .Twitter{
+        width: 3%;
+        height: 50%
+      };
+      
+      .Instagram{
+        width: 50%;
+        height: 50%
+      };
 }
