@@ -23,6 +23,31 @@
         margin: 1rem 0;
     }
 
+    header h1 {
+        margin: 2vh 0;
+    }
 
+<<<<<<< HEAD
 }
 
+=======
+    header h1 {
+        font-size: 40px;
+        z-index: 2;
+    }
+
+    .logo {
+        width: 150px;
+        margin: -1rem 0 -7.75rem 0;
+        z-index: 1;
+    }
+
+    .card{
+        min-width: 25rem;
+    }
+
+    .carousel{
+        min-height: 50rem;
+    }
+}
+>>>>>>> 1b296391067fc98d1c1915604459c60733d67576

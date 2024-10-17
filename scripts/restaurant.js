@@ -1,4 +1,4 @@
-const restaurant = [
+let restaurant = [
     {
         type: "France",
         image: "../public/images/Logo.png",
@@ -92,7 +92,4 @@ const restaurant = [
     
 ];
 
-
 export default restaurant;
-
-console.log(restaurant);
