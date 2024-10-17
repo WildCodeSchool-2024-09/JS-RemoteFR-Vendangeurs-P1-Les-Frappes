@@ -1,4 +1,4 @@
-export default function createCard({image, alt, name, noteFrappe, noteGoogle, avis, desc, type}) {
+export default function createCard({image, alt, name, noteFrappe, noteGoogle, avis, desc}) {
 
   const card = document.createElement('div');
   card.classList.add('card');

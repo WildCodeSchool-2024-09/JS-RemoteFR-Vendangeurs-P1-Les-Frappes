@@ -4,7 +4,6 @@ import restaurant from "./restaurant.js";
 document.addEventListener("DOMContentLoaded", () => {
   const cardsContainer = document.querySelector("#cards-container");
   const searchInput = document.querySelector("#search-restaurant");
-  const franceCheckInput = document.querySelector('#check-france');
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
   let currentIndex = 0;
@@ -12,10 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayCards() {
     const searchResto = searchInput.value;
 
-    const filterRestaurant = restaurant.filter(({ name, type }) => {
+    const filterRestaurant = restaurant.filter(({name}) => {
       const matchSearch = name.includes(searchResto);
-      // const matchFrance = !franceCheckInput || type === true;
-
 
       return matchSearch ;
     });
