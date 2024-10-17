@@ -1,6 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 995px) { 
 
-/* Position de départ de chaque pointeur format tablette */
+    .card{
+        min-width: 35rem;
+    }
 
 #point1 {
     top: 39%;
@@ -53,7 +55,7 @@
         margin: 1rem 0;
     }
 
-/* Position initial de chaque pointeurs format desktop */
+    
 
 #point1 {
     top: 40%;
@@ -98,7 +100,7 @@
     }
 
     .card{
-        min-width: 25rem;
+        min-width: 35rem;
     }
 
     .carousel{

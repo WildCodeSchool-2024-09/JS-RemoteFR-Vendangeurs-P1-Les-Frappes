@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayCards() {
     const searchResto = searchInput.value;
 
-    const filterRestaurant = restaurant.filter(({ name }) => {
+    const filterRestaurant = restaurant.filter(({name}) => {
       const matchSearch = name.includes(searchResto);
 
-      return matchSearch;
+      return matchSearch ;
     });
 
     filterRestaurant.forEach((resto) => {
