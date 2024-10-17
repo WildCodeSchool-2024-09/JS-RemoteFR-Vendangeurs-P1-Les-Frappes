@@ -21,7 +21,6 @@ body {
 }
 
 @font-face {
-
     font-family: 'LilitaOne';
     src: url(../public/fonts/LilitaOne-Regular.ttf);
 }
@@ -102,7 +101,6 @@ a {
 }
 
 
-
 /* MAIN - Map */
 
 .map {
@@ -125,8 +123,6 @@ a {
     left: 0;
     cursor: zoom-in;
     transform : perspective(800px) translateZ(100px);
-
-
 }
 
 
@@ -184,14 +180,23 @@ a {
 #card-container {
   display: flex;
   flex-direction: row;
-  transition: transform 0.5s ease;  
+  transition: transform 0.5s ease; 
+  width: 100vw;
+  height: 100vw; 
 }
 
 .prev, .next {
   position: absolute;
   transform: translateY(-50);
+  font-size: 40px;
   top: 50%;
   z-index: 2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  border-radius: 7px 0;
 }
 
 .prev {
@@ -204,8 +209,8 @@ a {
 
 .card {
     background-color: var(--cardColor);
-    height: 42.5rem;
-    width: 16;
+    height: 43.5rem;
+    width: 23rem;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
