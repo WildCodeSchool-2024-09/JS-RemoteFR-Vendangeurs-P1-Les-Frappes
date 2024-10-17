@@ -47,8 +47,14 @@ header h1 {
 
 a {
   text-decoration: none;
+  text-align: center;
+  color: aquamarine;
 }
 
+nav{
+  text-align: center;
+  color: var(--cardColor);
+}
 .logo {
   width: 75px;
   margin: -1rem 0 -4rem 0;
@@ -308,6 +314,16 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
+
+.Twitter{
+  width: 10%;
+  height: 50%
+};
+
+.Instagram{
+  width: 50%;
+  height: 50%
+};
 
 footer img {
   margin: 0 1rem 0 0;
