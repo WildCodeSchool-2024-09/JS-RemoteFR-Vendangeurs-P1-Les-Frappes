@@ -197,7 +197,7 @@ a {
   outline: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.363);
-  color: white;
+  color: rgb(238, 238, 238);
   border-radius: 7px 0;
 }
 
