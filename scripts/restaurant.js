@@ -18,7 +18,7 @@ let restaurant = [
         desc: "Au Village Inn, préparez-vous à une expérience... collante ! Cet hôtel-restaurant typique du Sud-Ouest des USA dégage une ambiance glauque, avec des banquettes usées et une lumière tamisée étrange. Ici, tout colle un peu, mais les plats sont étonnamment copieux !"
     },
     {
-        image: "https://wildcodeschool-2024-09.github.io/JS-RemoteFR-Vendangeurs-P1-Les-Frappes/public/images/LePlage",
+        image: "https://wildcodeschool-2024-09.github.io/JS-RemoteFR-Vendangeurs-P1-Les-Frappes/public/images/LePlage.png",
         alt: "Un vrai restaurant Français !",
         name: "Le Place",
         noteFrappe: "https://wildcodeschool-2024-09.github.io/JS-RemoteFR-Vendangeurs-P1-Les-Frappes/public/images/note-5-5.png",
