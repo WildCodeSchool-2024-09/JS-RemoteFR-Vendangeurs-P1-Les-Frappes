@@ -183,15 +183,15 @@ map.addEventListener("click", function() {
         map.style.transition = "transform 0.5s";
         map.style.cursor = "zoom-out";
         point1.style.top = "34%";
-        point1.style.left = "14%";
+        point1.style.left = "5%";
         point1.style.transition = "500ms";
       
         point2.style.top = "65%";
-        point2.style.left = "97%";
+        point2.style.left = "120%";
         point2.style.transition = "500ms";
        
         point3.style.top = "28%";
-        point3.style.left = "95%";
+        point3.style.left = "120%";
         point3.style.transition = "500ms";
 
         point4.style.top = "28%";
@@ -281,22 +281,22 @@ mapCursor !== mapCursor
             map.style.transition = "transform 0.5s";
             map.style.cursor = "zoom-out";
             point1.style.top = "35%";
-            point1.style.left = "40%";
+            point1.style.left = "36%";
             point1.style.transition = "500ms";
             //point1.style.scale = "2";
-            point2.style.top = "68%";
-            point2.style.left = "66%";
+            point2.style.top = "70%";
+            point2.style.left = "72%";
             point2.style.transition = "500ms";
            // point2.style.scale = "1,8";
             point3.style.top = "35%";
-            point3.style.left = "65%";
+            point3.style.left = "70%";
             point3.style.transition = "500ms";
            // point3.style.scale = "1,8";
             point4.style.top = "35%";
-            point4.style.left = "31%";
+            point4.style.left = "24%";
             point4.style.transition = "500ms";
            // point4.style.scale = "1,8";
-           point5.style.top = "69%";
+           point5.style.top = "71%";
            point5.style.left = "49%";
            point5.style.transition = "500ms";
           // point5.style.scale = "1,8";
