@@ -106,12 +106,10 @@
     }
 
     .Twitter{
-        width: 3%;
-        height: 50%
-      };
+        width: 40px;
+      }
       
-      .Instagram{
-        width: 50%;
-        height: 50%
-      };
+    .Instagram{
+        width: 45px;
+    }
 }
