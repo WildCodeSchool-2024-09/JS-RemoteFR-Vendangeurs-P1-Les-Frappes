@@ -70,6 +70,10 @@
         align-items: center;
       }
       
+      .banner {
+        font-size: 25px;
+      }
+
     /* Cards */
   
     .note-responsive {
@@ -89,6 +93,14 @@
 
     .avis p {
         margin: 1rem 0;
+    }
+
+    .card{
+        min-width: 35rem;
+    }
+
+    .carousel{
+        min-height: 50rem;
     }
 
     /* Map */
@@ -135,13 +147,6 @@
         z-index: 1;
     }
 
-    .card{
-        min-width: 35rem;
-    }
-
-    .carousel{
-        min-height: 50rem;
-    }
 
     .Twitter{
         width: 40px;

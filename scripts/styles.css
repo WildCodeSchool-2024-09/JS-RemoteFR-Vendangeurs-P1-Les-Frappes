@@ -91,9 +91,9 @@ a {
   align-items: center;
 }
 
-/* Partie filtre */
+/* Partie bannière */
 
-.filtre {
+.banner {
   background-color: var(--bannerColor);
   display: flex;
   justify-content: center;
@@ -102,6 +102,7 @@ a {
   padding: 1rem 0;
   margin: 0;
   color: var(--nameResto);
+  font-size: 18px;
 }
 
 /* MAIN - Map */
