@@ -70,9 +70,8 @@
         align-items: center;
       }
       
-    /* Fin barre de recherche */
+    /* Cards */
   
-
     .note-responsive {
         display: flex;
         justify-content: space-around;
@@ -92,7 +91,7 @@
         margin: 1rem 0;
     }
 
-
+    /* Map */
 
 #point1 {
     top: 40%;
