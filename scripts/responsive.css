@@ -151,4 +151,24 @@
     .Instagram{
         width: 45px;
     }
+
+    footer img {
+        margin: 0 5px 0 0;
+      }
+      
+
+      footer {
+        background-color: var(--bannerColor);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 5rem;
+        margin: 0;
+        padding: 10px;
+      }
+
+      footer p{
+        text-align: center;
+        flex-grow: 1;
+      }
 }
