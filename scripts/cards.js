@@ -1,35 +1,12 @@
 import createCard from "./createCard.js";
 import restaurant from "./restaurant.js";
 
-<<<<<<< HEAD
-document.addEventListener( 'DOMContentLoaded', function() {
-  let splide = new Splide( '.splide', {
-type   : 'loop',
-perPage: 5,
-focus  : 'center',
-gap: '5%',
-trimSpace: false,
-snap: true,
-breakpoints: {
-  780: {
-    perPage: 1
-  },
-  990: {
-    perPage: 3
-  },
-} 
-} );
-  splide.mount(); })
-
-  
-=======
 document.addEventListener("DOMContentLoaded", () => {
   const cardsContainer = document.querySelector("#cards-container");
   const searchInput = document.querySelector("#search-restaurant");
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
   let currentIndex = 0;
->>>>>>> 1b296391067fc98d1c1915604459c60733d67576
 
   function displayCards() {
     const searchResto = searchInput.value;
