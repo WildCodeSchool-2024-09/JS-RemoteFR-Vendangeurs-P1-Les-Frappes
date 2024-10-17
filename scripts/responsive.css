@@ -1,8 +1,77 @@
 @media screen and (min-width: 768px) and (max-width: 995px) { 
 
+    .card{
+        min-width: 35rem;
+    }
+
+#point1 {
+    top: 39%;
+    left: 28%;
+
+}
+#point2 {
+    top: 61%;
+    left: 82%;
+
+}
+#point3 {
+    top: 39%;
+    left: 79%;
+
+}
+#point4 {
+    top: 39%;
+    left: 13%;
+
+}
+#point5 {
+    top: 61%;
+    left: 48%;
+
+}
+
+
+
 }
 
 @media screen and (min-width: 996px)  {
+
+    /* Barre de recherche */
+
+    .searchBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+        min-height: 2rem;
+        min-width: 35rem;
+        box-shadow: 2px 2px 3px black;
+        margin: 0.5rem 0 1.5rem 0;
+      }
+
+    .search-restaurant {
+        background-color: white;
+        border: none;
+        min-width: 35rem;
+        height: 2rem;
+        border-radius: 25px 0 0 25px;
+        padding: 0.25rem 0.75rem;
+        margin: 0;
+      }
+
+      .searchButton {
+        border-style: none;
+        background-color: var(--secondaryColor);
+        border-radius: 25px;
+        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    /* Fin barre de recherche */
+  
 
     .note-responsive {
         display: flex;
@@ -23,6 +92,35 @@
         margin: 1rem 0;
     }
 
+
+
+#point1 {
+    top: 40%;
+    left: 42%;
+
+}
+#point2 {
+    top: 61%;
+    left: 62%;
+
+}
+#point3 {
+    top: 40%;
+    left: 62%;
+
+}
+#point4 {
+    top: 40%;
+    left: 35%;
+
+}
+#point5 {
+    top: 61%;
+    left: 49%;
+
+}
+
+
     header h1 {
         margin: 2vh 0;
     }
@@ -39,7 +137,7 @@
     }
 
     .card{
-        min-width: 25rem;
+        min-width: 35rem;
     }
 
     .carousel{
