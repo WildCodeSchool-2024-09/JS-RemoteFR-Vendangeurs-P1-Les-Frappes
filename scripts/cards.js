@@ -2,7 +2,7 @@ import createCard from "./createCard.js";
 import restaurant from "./restaurant.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cardsContainer = document.querySelector("#cards-container");
+  const cardsContainer = document.querySelector(".slider");
   const searchInput = document.querySelector("#search-restaurant");
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateCard() {
-    const translateX = -currentIndex * 33.33;
+    const translateX = -currentIndex * 33;
     cardsContainer.style.transform = `translateX(${translateX}%)`;
   }
 
