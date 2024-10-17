@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateCard() {
-    const translateX = -currentIndex * 33;
+    const translateX = -currentIndex * 20;
     cardsContainer.style.transform = `translateX(${translateX}%)`;
   }
 
   prevButton.addEventListener("click", () => {
-    currentIndex = currentIndex > 0 ? currentIndex - 1 : restaurant.length - 1;
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : restaurant.length -1;
     updateCard();
   });
 

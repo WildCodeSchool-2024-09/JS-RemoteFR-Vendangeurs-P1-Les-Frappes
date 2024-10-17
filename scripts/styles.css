@@ -91,9 +91,9 @@ a {
   align-items: center;
 }
 
-/* Partie filtre */
+/* Partie bannière */
 
-.filtre {
+.banner {
   background-color: var(--bannerColor);
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@ a {
   padding: 1rem 0;
   margin: 0;
   color: var(--nameResto);
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 /* MAIN - Map */
@@ -162,6 +162,7 @@ a {
 
 }
 
+
 .point:hover {
     /*transform: scale(1.1);*/
     background-color: chartreuse;
@@ -186,14 +187,12 @@ a {
   display: block;
 }
 
-/* MAIN - ListCard */
-
-
 .section-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   height: 47rem;
   background-color: var(--secondaryColor);
 }
@@ -203,11 +202,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  overflow: hidden;
+  transition: transform ease 0.5s;
 }
 
-.cards-container {
-  display: block;
+#cards-container {
+  flex: 0 0 auto;
 }
 
 .prev, .next {
@@ -220,7 +219,7 @@ a {
   outline: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.363);
-  color: white;
+  color: rgb(238, 238, 238);
   border-radius: 7px 0;
 }
 
@@ -235,13 +234,13 @@ a {
 .card {
     background-color: var(--cardColor);
     height: 43.5rem;
-    width: 23rem;
+    min-width: 22rem;
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-left: 2rem;
+    margin: 0 1rem;
     box-sizing: border-box;
     position: relative;
 }
@@ -277,7 +276,7 @@ a {
 .note-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 3.5rem;
+    padding: 0 2rem;
 }
 
 .note-container p {
@@ -326,7 +325,7 @@ hr {
 }
 
 .link-card:hover {
-    background-color: #b6c0bc;
+    background-color: #1ce092;
     transform: ease-in-out 0.9s;
 }
 
