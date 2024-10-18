@@ -30,7 +30,7 @@ export default function createCard({image, alt, name, noteFrappe, noteGoogle, av
                  </div>
                </div>
                <div class="link-card">
-                 <a href="">Leur site</a>
+                 <a href="https://southpark.fandom.com/wiki/Vernacular?file=Restaurants-vernacular.png">Leur site</a>
              </div>`
 
 
